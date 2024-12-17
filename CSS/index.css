@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #171718;
 }
 #megustas{
     margin: 0;
@@ -65,9 +66,7 @@ body{
 
 #pregunta{
     width: 100%;
-    height: 70vh;
     background-color: #171718;
-    position: relative;
 }
 #pregunta p{
     margin: 0;
@@ -79,7 +78,7 @@ body{
 }
 .pregunta{
     margin: 35px;
-    font-size: 35px;
+    font-size: 50px;
     color: transparent;
     text-align: center;
     text-decoration: none;
@@ -90,20 +89,38 @@ body{
     filter: drop-shadow(0 0 4px #ee8a8a);
     font-style: oblique;
 }
-.pregunta:hover{
-    animation: pregunta .8s linear infinite alternate;
+
+#pregunta .respuesta{
+    display: flex;
+    justify-content: space-between;
 }
-@keyframes pregunta{
-    0%{
-        transform: scale(1.07);
-    }
-    60%{
-        transform: scale(1.05);
-    }
-    80%{
-        transform: scale(1.0);
-    }
-    100%{
-        transform: scale(0.8);
-    }
+#pregunta #si{
+    display: inline-block;
+    width: 40%;
+    height: 80px;
+    background-image: url(../IMG/ปักพินโดย\ ~박\ 운나~\ ใน\ Подкроватье\ _\ การออกแบบโปสเตอร์\,\ สวย\,\ วอลเปเปอร์โทรศัพท์.jpg);
+    background-size: 100% 160px;
+    background-position: center;
+    background-repeat: space;
+    color: #cfc2df;
+    font-size: 24px;
+    font-style: oblique;
+    border: none;
+    border-radius: 25px;
+    filter: drop-shadow(0 0 4px #c42c2c);
+}
+#pregunta #no{
+    display: inline-block;
+    width: 40%;
+    height: 80px;
+    background-image: url(../IMG/rechazo.jpg);
+    background-size: 100% 160px;
+    background-position: center;
+    background-repeat: space;
+    color: #cfc2df;
+    font-size: 24px;
+    font-style: oblique;
+    border: none;
+    border-radius: 25px;
+    filter: drop-shadow(0 0 4px #c42c2c);
 }
